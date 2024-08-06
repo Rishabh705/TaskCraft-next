@@ -1,0 +1,256 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 582" preserveAspectRatio="xMidYMid" width="1024" height="582" style="shape-rendering: auto; display: block; background: rgb(255, 235, 189);">
+    <g data-idx="1">
+        <defs data-idx="2">
+            <filter height="3" width="3" y="-1" x="-1" id="blur-nq4q5u6dq7r-1" data-idx="3">
+                <feGaussianBlur stdDeviation="3" data-idx="4"></feGaussianBlur>
+            </filter>
+            <filter height="3" width="3" y="-1" x="-1" id="blur-nq4q5u6dq7r-2" data-idx="5">
+                <feGaussianBlur stdDeviation="1.5" data-idx="6"></feGaussianBlur>
+            </filter>
+            <filter height="3" width="3" y="-1" x="-1" id="blur-nq4q5u6dq7r-3" data-idx="7">
+                <feGaussianBlur stdDeviation="1" data-idx="8"></feGaussianBlur>
+            </filter>
+        </defs>
+        <circle fill="#fe0d02" r="0.39507198333740234" transform="matrix(1,0,0,1,1022.08935546875,358.1477966308594)" cy="0" cx="0" data-idx="9" fill-opacity="0.0372655">
+        </circle>
+        <circle fill="#feb200" r="3.683034896850586" transform="matrix(1,0,0,1,109.09651947021484,288.5809020996094)" cy="0" cx="0" data-idx="13" fill-opacity="0.449292">
+        </circle>
+        <circle fill="#043b42" r="3.854583740234375" transform="matrix(1,0,0,1,753.0131225585938,553.0208740234375)" cy="0" cx="0" data-idx="17" fill-opacity="0.471369">
+        </circle>
+        <circle fill="#fe0d02" r="0" transform="matrix(1,0,0,1,666.6112060546875,255.81854248046875)" cy="0" cx="0" data-idx="21" fill-opacity="0">
+        </circle>
+        <circle fill="#feb200" r="6.3255767822265625" transform="matrix(1,0,0,1,663.3396606445312,219.70489501953125)" cy="0" cx="0" data-idx="25" fill-opacity="0.536918">
+        </circle>
+        <circle fill="#043b42" r="5.5420026779174805" transform="matrix(1,0,0,1,651.82275390625,529.314697265625)" cy="0" cx="0" data-idx="29" fill-opacity="0.514829">
+        </circle>
+        <circle fill="#fe0d02" r="0" transform="matrix(1,0,0,1,191.9418182373047,-47.82163619995117)" cy="0" cx="0" data-idx="33" fill-opacity="0">
+        </circle>
+        <circle fill="#feb200" r="0" transform="matrix(1,0,0,1,928.0748901367188,195.57920837402344)" cy="0" cx="0" data-idx="37" fill-opacity="0">
+        </circle>
+        <circle fill="#043b42" r="6.838583469390869" transform="matrix(1,0,0,1,57.262115478515625,558.6958618164062)" cy="0" cx="0" data-idx="41" fill-opacity="0.584862">
+        </circle>
+        <circle fill="#fe0d02" r="5.194466590881348" transform="matrix(1,0,0,1,260.7713623046875,214.64910888671875)" cy="0" cx="0" data-idx="45" fill-opacity="0.993627">
+        </circle>
+        <circle fill="#feb200" r="1.7624845504760742" transform="matrix(1,0,0,1,219.62844848632812,-0.34664106369018555)" cy="0" cx="0" data-idx="49" fill-opacity="0.154742">
+        </circle>
+        <circle fill="#043b42" r="5.4256672859191895" transform="matrix(1,0,0,1,445.28662109375,413.94500732421875)" cy="0" cx="0" data-idx="53" fill-opacity="0.879688">
+        </circle>
+        <circle fill="#fe0d02" r="2.126798629760742" transform="matrix(1,0,0,1,32.076480865478516,238.34117126464844)" cy="0" cx="0" data-idx="57" fill-opacity="0.228201">
+        </circle>
+        <circle fill="#feb200" r="0.7158365249633789" transform="matrix(1,0,0,1,665.8056030273438,414.3880615234375)" cy="0" cx="0" data-idx="61" fill-opacity="0.0854456">
+        </circle>
+        <circle fill="#043b42" r="7.319244384765625" transform="matrix(1,0,0,1,581.5480346679688,166.3916778564453)" cy="0" cx="0" data-idx="65" fill-opacity="0.61034">
+        </circle>
+        <circle fill="#fe0d02" r="0" transform="matrix(1,0,0,1,155.7023162841797,337.924072265625)" cy="0" cx="0" data-idx="69" fill-opacity="0">
+        </circle>
+        <circle fill="#feb200" r="0" transform="matrix(1,0,0,1,740.1316528320312,481.87347412109375)" cy="0" cx="0" data-idx="73" fill-opacity="0">
+        </circle>
+        <circle fill="#043b42" r="0" transform="matrix(1,0,0,1,459.208251953125,622.5908813476562)" cy="0" cx="0" data-idx="77" fill-opacity="0">
+        </circle>
+        <circle fill="#fe0d02" r="13.110075950622559" transform="matrix(1,0,0,1,304.9228515625,385.5737609863281)" cy="0" cx="0" data-idx="81" fill-opacity="0.805046">
+        </circle>
+        <circle fill="#feb200" r="11.56826114654541" transform="matrix(1,0,0,1,868.4330444335938,108.6814956665039)" cy="0" cx="0" data-idx="85" fill-opacity="0.999095">
+        </circle>
+        <circle fill="#043b42" r="4.043125152587891" transform="matrix(1,0,0,1,906.7297973632812,481.8436279296875)" cy="0" cx="0" data-idx="89" fill-opacity="0.24527">
+        </circle>
+        <circle fill="#fe0d02" r="4.618792533874512" transform="matrix(1,0,0,1,774.0543212890625,206.26138305664062)" cy="0" cx="0" data-idx="93" fill-opacity="0.350887">
+        </circle>
+        <circle fill="#feb200" r="5.137535572052002" transform="matrix(1,0,0,1,918.0289306640625,229.0629425048828)" cy="0" cx="0" data-idx="97" fill-opacity="0.139807">
+        </circle>
+        <circle fill="#043b42" r="2.148223876953125" transform="matrix(1,0,0,1,777.9756469726562,58.64188766479492)" cy="0" cx="0" data-idx="101" fill-opacity="0.135034">
+        </circle>
+        <circle fill="#fe0d02" r="0" transform="matrix(1,0,0,1,554.3031005859375,466.4215087890625)" cy="0" cx="0" data-idx="105" fill-opacity="0">
+        </circle>
+        <circle fill="#feb200" r="10.857177734375" transform="matrix(1,0,0,1,-2.520115852355957,292.320556640625)" cy="0" cx="0" data-idx="109" fill-opacity="0.942575">
+        </circle>
+        <circle fill="#043b42" r="1.6157646179199219" transform="matrix(1,0,0,1,899.5040283203125,413.8519287109375)" cy="0" cx="0" data-idx="113" fill-opacity="0.0889316">
+        </circle>
+        <circle fill="#fe0d02" r="3.5205812454223633" transform="matrix(1,0,0,1,488.1899719238281,526.47265625)" cy="0" cx="0" data-idx="117" fill-opacity="0.613682">
+        </circle>
+        <circle fill="#feb200" r="2.0359058380126953" transform="matrix(1,0,0,1,967.549560546875,280.44268798828125)" cy="0" cx="0" data-idx="121" fill-opacity="0.115602">
+        </circle>
+        <circle fill="#043b42" r="1.7271366119384766" transform="matrix(1,0,0,1,429.0635070800781,459.83013916015625)" cy="0" cx="0" data-idx="125" fill-opacity="0.202056">
+        </circle>
+        <circle fill="#fe0d02" r="19.10599136352539" transform="matrix(1,0,0,1,152.4664306640625,445.03167724609375)" cy="0" cx="0" data-idx="129" fill-opacity="0.575006">
+        </circle>
+        <circle fill="#feb200" r="7.761362075805664" transform="matrix(1,0,0,1,315.4918518066406,365.7947082519531)" cy="0" cx="0" data-idx="133" fill-opacity="0.721746">
+        </circle>
+        <circle fill="#043b42" r="9.289710998535156" transform="matrix(1,0,0,1,173.11204528808594,158.76266479492188)" cy="0" cx="0" data-idx="137" fill-opacity="0.823875">
+        </circle>
+        <circle fill="#fe0d02" r="4.499530792236328" transform="matrix(1,0,0,1,170.3575897216797,396.4039306640625)" cy="0" cx="0" data-idx="141" fill-opacity="0.531269">
+        </circle>
+        <circle fill="#feb200" r="4.9370880126953125" transform="matrix(1,0,0,1,756.71826171875,316.6054382324219)" cy="0" cx="0" data-idx="145" fill-opacity="0.958498">
+        </circle>
+        <circle fill="#043b42" r="0" transform="matrix(1,0,0,1,636.3363647460938,178.0294647216797)" cy="0" cx="0" data-idx="149" fill-opacity="0">
+        </circle>
+        <circle fill="#fe0d02" r="8.132847785949707" transform="matrix(1,0,0,1,278.9208984375,308.39569091796875)" cy="0" cx="0" data-idx="153" fill-opacity="0.92301">
+        </circle>
+        <circle fill="#feb200" r="4.8399338722229" transform="matrix(1,0,0,1,119.289794921875,89.09136962890625)" cy="0" cx="0" data-idx="157" fill-opacity="0.411375">
+        </circle>
+        <circle fill="#043b42" r="8.962409019470215" transform="matrix(1,0,0,1,48.992679595947266,195.98846435546875)" cy="0" cx="0" data-idx="161" fill-opacity="0.774846">
+        </circle>
+        <circle fill="#fe0d02" r="3.4859867095947266" transform="matrix(1,0,0,1,471.527099609375,559.3787231445312)" cy="0" cx="0" data-idx="165" fill-opacity="0.713444">
+        </circle>
+        <circle fill="#feb200" r="9.9892578125" transform="matrix(1,0,0,1,11.054876327514648,271.9010925292969)" cy="0" cx="0" data-idx="169" fill-opacity="0.750102">
+        </circle>
+        <circle fill="#043b42" r="1.3774266242980957" transform="matrix(1,0,0,1,427.26934814453125,171.11892700195312)" cy="0" cx="0" data-idx="173" fill-opacity="0.243481">
+        </circle>
+        <circle fill="#fe0d02" r="2.0892858505249023" transform="matrix(1,0,0,1,343.77716064453125,112.91081237792969)" cy="0" cx="0" data-idx="177" fill-opacity="0.165705">
+        </circle>
+        <circle fill="#feb200" r="2.8462276458740234" transform="matrix(1,0,0,1,632.1359252929688,508.7783203125)" cy="0" cx="0" data-idx="181" fill-opacity="0.253322">
+        </circle>
+        <circle fill="#043b42" r="0" transform="matrix(1,0,0,1,534.07080078125,578.3682250976562)" cy="0" cx="0" data-idx="185" fill-opacity="0">
+        </circle>
+        <circle fill="#fe0d02" r="0" transform="matrix(1,0,0,1,499.8697814941406,617.0184936523438)" cy="0" cx="0" data-idx="189" fill-opacity="0">
+        </circle>
+        <circle fill="#feb200" r="5.494202613830566" transform="matrix(1,0,0,1,304.7635803222656,361.5721740722656)" cy="0" cx="0" data-idx="193" fill-opacity="0.597287">
+        </circle>
+        <circle fill="#043b42" r="0.9570283889770508" transform="matrix(1,0,0,1,244.06796264648438,483.1520080566406)" cy="0" cx="0" data-idx="197" fill-opacity="0.0669928">
+        </circle>
+        <circle fill="#fe0d02" r="11.154229164123535" transform="matrix(1,0,0,1,100.47579193115234,-0.21195030212402344)" cy="0" cx="0" data-idx="201" fill-opacity="0.969046">
+        </circle>
+        <circle fill="#feb200" r="1.655146837234497" transform="matrix(1,0,0,1,858.5023193359375,236.89393615722656)" cy="0" cx="0" data-idx="205" fill-opacity="0.387184">
+        </circle>
+        <circle fill="#043b42" r="1.7692832946777344" transform="matrix(1,0,0,1,907.6085205078125,335.205078125)" cy="0" cx="0" data-idx="209" fill-opacity="0.160669">
+        </circle>
+        <circle fill="#fe0d02" r="0.25027942657470703" transform="matrix(1,0,0,1,358.3143310546875,446.7436828613281)" cy="0" cx="0" data-idx="213" fill-opacity="0.050329">
+        </circle>
+        <circle fill="#feb200" r="6.161998748779297" transform="matrix(1,0,0,1,278.43621826171875,499.1157531738281)" cy="0" cx="0" data-idx="217" fill-opacity="0.505436">
+        </circle>
+        <circle fill="#043b42" r="0" transform="matrix(1,0,0,1,316.9897155761719,197.97093200683594)" cy="0" cx="0" data-idx="221" fill-opacity="0">
+        </circle>
+        <circle fill="#fe0d02" r="17.500207901000977" transform="matrix(1,0,0,1,965.4408569335938,380.1471252441406)" cy="0" cx="0" data-idx="225" fill-opacity="0.982913">
+        </circle>
+        <circle fill="#feb200" r="4.827600479125977" transform="matrix(1,0,0,1,228.91439819335938,584.64990234375)" cy="0" cx="0" data-idx="229" fill-opacity="0.517708">
+        </circle>
+        <circle fill="#043b42" r="1.1735482215881348" transform="matrix(1,0,0,1,495.54388427734375,-57.95071029663086)" cy="0" cx="0" data-idx="233" fill-opacity="0.149913">
+        </circle>
+        <circle fill="#fe0d02" r="0" transform="matrix(1,0,0,1,609.2030029296875,563.1878051757812)" cy="0" cx="0" data-idx="237" fill-opacity="0">
+        </circle>
+        <circle fill="#feb200" r="3.965444564819336" transform="matrix(1,0,0,1,409.9997863769531,444.5137939453125)" cy="0" cx="0" data-idx="241" fill-opacity="0.285251">
+        </circle>
+        <circle fill="#043b42" r="4.865623474121094" transform="matrix(1,0,0,1,783.224365234375,140.52362060546875)" cy="0" cx="0" data-idx="245" fill-opacity="0.873962">
+        </circle>
+        <circle fill="#fe0d02" r="0" transform="matrix(1,0,0,1,112.39935302734375,104.58976745605469)" cy="0" cx="0" data-idx="249" fill-opacity="0">
+        </circle>
+        <circle fill="#feb200" r="2.6931674480438232" transform="matrix(1,0,0,1,190.83094787597656,534.6448364257812)" cy="0" cx="0" data-idx="253" fill-opacity="0.593732">
+        </circle>
+        <circle fill="#043b42" r="0" transform="matrix(1,0,0,1,409.1019287109375,640.4873657226562)" cy="0" cx="0" data-idx="257" fill-opacity="0">
+        </circle>
+        <circle fill="#fe0d02" r="0.10497727245092392" transform="matrix(1,0,0,1,993.6361694335938,495.2992858886719)" cy="0" cx="0" data-idx="261" fill-opacity="0.005751">
+        </circle>
+        <circle fill="#feb200" r="9.003162384033203" transform="matrix(1,0,0,1,659.0266723632812,358.2271423339844)" cy="0" cx="0" data-idx="265" fill-opacity="0.794171">
+        </circle>
+        <circle fill="#043b42" r="1.239633560180664" transform="matrix(1,0,0,1,908.7083740234375,360.63995361328125)" cy="0" cx="0" data-idx="269" fill-opacity="0.201911">
+        </circle>
+        <circle fill="#fe0d02" r="0" transform="matrix(1,0,0,1,44.36023712158203,498.1255187988281)" cy="0" cx="0" data-idx="273" fill-opacity="0">
+        </circle>
+        <circle fill="#feb200" r="2.6391592025756836" transform="matrix(1,0,0,1,163.35191345214844,19.46865463256836)" cy="0" cx="0" data-idx="277" fill-opacity="0.492917">
+        </circle>
+        <circle fill="#043b42" r="1.8940646648406982" transform="matrix(1,0,0,1,148.3425750732422,86.45386505126953)" cy="0" cx="0" data-idx="281" fill-opacity="0.34662">
+        </circle>
+        <circle fill="#fe0d02" r="3.0765180587768555" transform="matrix(1,0,0,1,435.6937561035156,467.83123779296875)" cy="0" cx="0" data-idx="285" fill-opacity="0.524762">
+        </circle>
+        <circle fill="#feb200" r="3.0481958389282227" transform="matrix(1,0,0,1,798.9436645507812,412.5317687988281)" cy="0" cx="0" data-idx="289" fill-opacity="0.283767">
+        </circle>
+        <circle fill="#043b42" r="3.344369888305664" transform="matrix(1,0,0,1,1014.774658203125,240.4147186279297)" cy="0" cx="0" data-idx="293" fill-opacity="0.282089">
+        </circle>
+        <circle fill="#fe0d02" r="0" transform="matrix(1,0,0,1,415.03961181640625,330.9688415527344)" cy="0" cx="0" data-idx="297" fill-opacity="0">
+        </circle>
+        <circle fill="#feb200" r="0" transform="matrix(1,0,0,1,109.65171813964844,145.03036499023438)" cy="0" cx="0" data-idx="301" fill-opacity="0">
+        </circle>
+        <circle fill="#043b42" r="4.460194110870361" transform="matrix(1,0,0,1,908.7158203125,565.4252319335938)" cy="0" cx="0" data-idx="305" fill-opacity="0.777155">
+        </circle>
+        <circle fill="#fe0d02" r="11.375070571899414" transform="matrix(1,0,0,1,462.2734069824219,69.85185241699219)" cy="0" cx="0" data-idx="309" fill-opacity="0.924856">
+        </circle>
+        <circle fill="#feb200" r="5.468350410461426" transform="matrix(1,0,0,1,794.2650146484375,442.73870849609375)" cy="0" cx="0" data-idx="313" fill-opacity="0.535087">
+        </circle>
+        <circle fill="#043b42" r="2.568063497543335" transform="matrix(1,0,0,1,490.27593994140625,410.85662841796875)" cy="0" cx="0" data-idx="317" fill-opacity="0.245696">
+        </circle>
+        <circle fill="#fe0d02" r="4.729337692260742" transform="matrix(1,0,0,1,438.06475830078125,551.4705810546875)" cy="0" cx="0" data-idx="321" fill-opacity="0.349183">
+        </circle>
+        <circle fill="#feb200" r="9.834677696228027" transform="matrix(1,0,0,1,793.4736328125,31.67607879638672)" cy="0" cx="0" data-idx="325" fill-opacity="0.853189">
+        </circle>
+        <circle fill="#043b42" r="3.528989791870117" transform="matrix(1,0,0,1,699.4142456054688,127.94438171386719)" cy="0" cx="0" data-idx="329" fill-opacity="0.393454">
+        </circle>
+        <circle fill="#fe0d02" r="0" transform="matrix(1,0,0,1,117.71287536621094,438.8634948730469)" cy="0" cx="0" data-idx="333" fill-opacity="0">
+        </circle>
+        <circle fill="#feb200" r="3.822895050048828" transform="matrix(1,0,0,1,827.894287109375,496.32373046875)" cy="0" cx="0" data-idx="337" fill-opacity="0.794775">
+        </circle>
+        <circle fill="#043b42" r="8.175374031066895" transform="matrix(1,0,0,1,525.3930053710938,27.118255615234375)" cy="0" cx="0" data-idx="341" fill-opacity="0.966886">
+        </circle>
+        <circle fill="#fe0d02" r="0.17780447006225586" transform="matrix(1,0,0,1,22.606830596923828,373.2708435058594)" cy="0" cx="0" data-idx="345" fill-opacity="0.0332413">
+        </circle>
+        <circle fill="#feb200" r="11.510988235473633" transform="matrix(1,0,0,1,171.37722778320312,589.0029296875)" cy="0" cx="0" data-idx="349" fill-opacity="0.933778">
+        </circle>
+        <circle fill="#043b42" r="1.0445899963378906" transform="matrix(1,0,0,1,84.36200714111328,357.7702331542969)" cy="0" cx="0" data-idx="353" fill-opacity="0.181968">
+        </circle>
+        <circle fill="#fe0d02" r="2.10143780708313" transform="matrix(1,0,0,1,305.2107849121094,390.87451171875)" cy="0" cx="0" data-idx="357" fill-opacity="0.49402">
+        </circle>
+        <circle fill="#feb200" r="2.89738392829895" transform="matrix(1,0,0,1,263.83538818359375,362.23089599609375)" cy="0" cx="0" data-idx="361" fill-opacity="0.581981">
+        </circle>
+        <circle fill="#043b42" r="0" transform="matrix(1,0,0,1,1049.1943359375,197.647705078125)" cy="0" cx="0" data-idx="365" fill-opacity="0">
+        </circle>
+        <circle fill="#fe0d02" r="1.9415802955627441" transform="matrix(1,0,0,1,128.372802734375,362.52801513671875)" cy="0" cx="0" data-idx="369" fill-opacity="0.217147">
+        </circle>
+        <circle fill="#feb200" r="0" transform="matrix(1,0,0,1,554.0369873046875,220.1448211669922)" cy="0" cx="0" data-idx="373" fill-opacity="0">
+        </circle>
+        <circle fill="#043b42" r="0" transform="matrix(1,0,0,1,113.78509521484375,312.2502746582031)" cy="0" cx="0" data-idx="377" fill-opacity="0">
+        </circle>
+        <circle fill="#fe0d02" r="0.8280200958251953" transform="matrix(1,0,0,1,931.49169921875,296.0368347167969)" cy="0" cx="0" data-idx="381" fill-opacity="0.0562258">
+        </circle>
+        <circle fill="#feb200" r="0.08771324157714844" transform="matrix(1,0,0,1,32.28738021850586,286.9346618652344)" cy="0" cx="0" data-idx="385" fill-opacity="0.00725776">
+        </circle>
+        <circle fill="#043b42" r="4.368829727172852" transform="matrix(1,0,0,1,904.7402954101562,-2.6042556762695312)" cy="0" cx="0" data-idx="389" fill-opacity="0.817874">
+        </circle>
+        <circle fill="#fe0d02" r="4.254365921020508" transform="matrix(1,0,0,1,558.6030883789062,11.545926094055176)" cy="0" cx="0" data-idx="393" fill-opacity="0.741986">
+        </circle>
+        <circle fill="#feb200" r="7.389331340789795" transform="matrix(1,0,0,1,205.51898193359375,554.3880615234375)" cy="0" cx="0" data-idx="397" fill-opacity="0.589563">
+        </circle>
+        <circle fill="#043b42" r="3.2503738403320312" transform="matrix(1,0,0,1,742.8787841796875,210.05899047851562)" cy="0" cx="0" data-idx="401" fill-opacity="0.794706">
+        </circle>
+        <circle fill="#fe0d02" r="15.490630149841309" transform="matrix(1,0,0,1,661.4174194335938,130.03067016601562)" cy="0" cx="0" data-idx="405" fill-opacity="0.90421">
+        </circle>
+        <circle fill="#feb200" r="3.271206855773926" transform="matrix(1,0,0,1,241.49293518066406,64.44115447998047)" cy="0" cx="0" data-idx="409" fill-opacity="0.704379">
+        </circle>
+        <circle fill="#043b42" r="16.120441436767578" transform="matrix(1,0,0,1,660.4127807617188,291.67388916015625)" cy="0" cx="0" data-idx="413" fill-opacity="0.886877">
+        </circle>
+        <circle fill="#fe0d02" r="1.2685837745666504" transform="matrix(1,0,0,1,317.1415710449219,121.29065704345703)" cy="0" cx="0" data-idx="417" fill-opacity="0.242069">
+        </circle>
+        <circle fill="#feb200" r="3.9178733825683594" transform="matrix(1,0,0,1,596.9561157226562,515.586181640625)" cy="0" cx="0" data-idx="421" fill-opacity="0.323104">
+        </circle>
+        <circle fill="#043b42" r="5.957210540771484" transform="matrix(1,0,0,1,215.0152130126953,145.26217651367188)" cy="0" cx="0" data-idx="425" fill-opacity="0.48333">
+        </circle>
+        <circle fill="#fe0d02" r="0" transform="matrix(1,0,0,1,598.0435180664062,229.4853515625)" cy="0" cx="0" data-idx="429" fill-opacity="0">
+        </circle>
+        <circle fill="#feb200" r="4.225029945373535" transform="matrix(1,0,0,1,956.9924926757812,245.24534606933594)" cy="0" cx="0" data-idx="433" fill-opacity="0.28957">
+        </circle>
+        <circle fill="#043b42" r="7.378950119018555" transform="matrix(1,0,0,1,147.5109405517578,340.02471923828125)" cy="0" cx="0" data-idx="437" fill-opacity="0.572273">
+        </circle>
+        <circle fill="#fe0d02" r="8.280972480773926" transform="matrix(1,0,0,1,953.3263549804688,75.286376953125)" cy="0" cx="0" data-idx="441" fill-opacity="0.624059">
+        </circle>
+        <circle fill="#feb200" r="0" transform="matrix(1,0,0,1,231.2462158203125,341.0802001953125)" cy="0" cx="0" data-idx="445" fill-opacity="0">
+        </circle>
+        <circle fill="#043b42" r="12.11684799194336" transform="matrix(1,0,0,1,725.3172607421875,296.1465759277344)" cy="0" cx="0" data-idx="449" fill-opacity="0.662535">
+        </circle>
+        <circle fill="#fe0d02" r="9.944160461425781" transform="matrix(1,0,0,1,783.53662109375,6.679713249206543)" cy="0" cx="0" data-idx="453" fill-opacity="0.322351">
+        </circle>
+        <circle fill="#feb200" r="0" transform="matrix(1,0,0,1,748.3515625,60.324764251708984)" cy="0" cx="0" data-idx="457" fill-opacity="0">
+        </circle>
+        <circle fill="#043b42" r="0" transform="matrix(1,0,0,1,214.7511444091797,476.81939697265625)" cy="0" cx="0" data-idx="461" fill-opacity="0">
+        </circle>
+        <circle fill="#fe0d02" r="4.131612300872803" transform="matrix(1,0,0,1,706.7049560546875,325.58001708984375)" cy="0" cx="0" data-idx="465" fill-opacity="0.730769">
+        </circle>
+        <circle fill="#feb200" r="8.288702011108398" transform="matrix(1,0,0,1,971.37451171875,372.2269287109375)" cy="0" cx="0" data-idx="469" fill-opacity="0.478856">
+        </circle>
+        <circle fill="#043b42" r="0" transform="matrix(1,0,0,1,221.86917114257812,-45.29075622558594)" cy="0" cx="0" data-idx="473" fill-opacity="0">
+        </circle>
+        <circle fill="#fe0d02" r="0" transform="matrix(1,0,0,1,937.9593505859375,559.5490112304688)" cy="0" cx="0" data-idx="477" fill-opacity="0">
+        </circle>
+        <circle fill="#feb200" r="4.627384185791016" transform="matrix(1,0,0,1,446.3573303222656,524.4920043945312)" cy="0" cx="0" data-idx="481" fill-opacity="0.47269">
+        </circle>
+        <circle fill="#043b42" r="2.411436080932617" transform="matrix(1,0,0,1,330.8389892578125,212.1337432861328)" cy="0" cx="0" data-idx="485" fill-opacity="0.505691">        </circle>
+        <g data-idx="489"></g>
+    </g>
+    
+</svg>
