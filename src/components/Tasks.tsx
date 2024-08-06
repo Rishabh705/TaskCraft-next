@@ -8,6 +8,7 @@ import TaskCard from './TaskCard';
 import { Frown } from "lucide-react";
 import { SearchParams, Task } from '@/utils/types';
 import { Suspense } from 'react';
+import { Accordion } from './ui/accordion';
 
 interface TasksProps {
   searchParams: SearchParams;
@@ -22,7 +23,8 @@ export default async function Tasks({ searchParams, className }: TasksProps) {
 
   // Extract search query, view type (grid or list), category, and status from searchParams
   const search = searchParams?.search || '';  // Default to an empty string if not provided
-  const isGrid: boolean = searchParams?.view === 'grid';  // Determine if the view should be a grid
+  // const isGrid: boolean = searchParams?.view === 'grid';  // Determine if the view should be a grid
+  const isGrid: boolean = false;  // Determine if the view should be a grid
   const viewstyle: string = isGrid ?
     'grid gap-x-4 gap-y-6 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3' :
     'flex flex-col gap-y-6';  // Apply appropriate styling based on the view type
@@ -41,8 +43,10 @@ export default async function Tasks({ searchParams, className }: TasksProps) {
 
   // Map filtered tasks to TaskCard components, each wrapped in a Card component
   const tasksCard: React.JSX.Element[] = displayedTasks.map((task, index) => (
-    <Card className={`group relative min-h-52 ${task.status === 'Complete' ? 'bg-green-200' : ''}`} key={index}>
-      <TaskCard task={task} isGrid={isGrid} />
+    <Card className={`relative ${task.status === 'Complete' ? 'bg-green-200' : ''}`} key={index}>
+      <Accordion type="single" collapsible>
+        <TaskCard task={task} isGrid={isGrid} />
+      </Accordion>
     </Card>
   ));
 
@@ -55,9 +59,9 @@ export default async function Tasks({ searchParams, className }: TasksProps) {
           <Suspense>
             <FilterButton />
           </Suspense>
-          <Suspense>
+          {/* <Suspense>
             <ViewButton className='hidden md:block' />
-          </Suspense>
+          </Suspense> */}
         </div>
       </div>
       <div className={cn(viewstyle, 'min-h-52')}>

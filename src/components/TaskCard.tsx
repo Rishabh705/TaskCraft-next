@@ -1,16 +1,8 @@
 import {
-    CardContent,
-    CardDescription,
-    CardFooter,
-    CardHeader,
-    CardTitle,
-} from "@/components/ui/card";
-import {
-    Popover,
-    PopoverContent,
-    PopoverTrigger,
-} from "@/components/ui/popover";
-import { Button } from './ui/button';
+    AccordionContent,
+    AccordionItem,
+    AccordionTrigger,
+} from "@/components/ui/accordion"
 import EditForm from './EditForm';
 import MarkComplete from './MarkComplete';
 import TimeLeft from './TimeLeft';
@@ -22,61 +14,43 @@ export default async function TaskCard({ task, isGrid }: { task: Task, isGrid: b
     // Fetch updated task data from the server
     const response: Response = await fetch(`${process.env.NEXT_PUBLIC_URL}/api/${task.id}`, { cache: "no-store" });
     const { data }: { data: Task } = await response.json();
-    
+
     return (
         <>
-            <CardHeader className='pb-2'>
+            <AccordionItem value="item-1" className='pt-3 px-3'>
                 {/* Conditionally render TimeLeft component based on task status */}
-                <div className={`pb-1 ${task.status === 'Complete' ? 'hidden' : 'block'}`}>
-                    <TimeLeft task={task} />
-                </div>
-                {/* Display truncated title based on grid or list view */}
-                <CardTitle className='font-normal'>
-                    {isGrid ? task.title.substring(0, 25) : task.title.substring(0, 50)} 
-                    {isGrid ? task.title.split("").length > 28 && "..." : task.title.split("").length > 50 && "..."}
-                </CardTitle>
-            </CardHeader>
-            <CardContent>
-                {/* Display truncated description based on grid or list view */}
-                <CardDescription className='break-all'>
-                    {isGrid ? task.description.substring(0, 200) : task.description.substring(0, 300)} 
-                    {isGrid ? task.description.split("").length > 28 && "..." : task.description.split("").length > 60 && "..."}
-                </CardDescription>
-            </CardContent>
-            <CardFooter className='flex w-full items-center justify-between'>
-                {/* Popover component for showing task details */}
-                <Popover>
-                    <PopoverTrigger asChild>
-                        <Button variant="outline">Details</Button>
-                    </PopoverTrigger>
-                    <PopoverContent>
-                        <div className="space-y-2">
-                            {/* Display task details */}
-                            <div className='flex justify-between items-center'>
-                                <p className="text-sm font-medium text-gray-700">Category</p>
-                                <p className="text-sm text-gray-500">{task.category}</p>
-                            </div>
-                            <div className='flex justify-between items-center'>
-                                <p className="text-sm font-medium text-gray-700">Due Date</p>
-                                <p className="text-sm text-gray-500">{task.due_date}</p>
-                            </div>
-                            <div className='flex justify-between items-center'>
-                                <p className="text-sm font-medium text-gray-700">Status</p>
-                                <p className="text-sm text-gray-500">{task.status}</p>
-                            </div>
-                        </div>
-                    </PopoverContent>
-                </Popover>
-                <div className='justify-end gap-1 hidden group-hover:flex'>
-                    {/* Render EditForm and Delete components */}
-                    <EditForm task={data}/>
-                    <Delete taskId={task.id}/>
-                    {/* Conditionally render MarkComplete based on task status */}
-                    <div className={`hidden ${task.status === 'Complete' ? '' : 'group-hover:flex'}`}>
-                        <MarkComplete task={data} />
+                <div className='flex w-full items-center justify-between'>
+                    <p className="text-sm font-bold">
+                        {task.category}
+                    </p>
+                    <div className={`${task.status === 'Complete' ? 'hidden' : 'block'}`}>
+                        <TimeLeft task={task} />
                     </div>
                 </div>
-            </CardFooter>
+                {/* Display truncated title based on grid or list view */}
+                <AccordionTrigger className='pt-2'>
+                    {isGrid ? task.title.substring(0, 25) : task.title.substring(0, 50)}
+                    {isGrid ? task.title.split("").length > 28 && "..." : task.title.split("").length > 50 && "..."}
+                </AccordionTrigger>
+                <AccordionContent>
+                    {/* Display truncated description based on grid or list view */}
+                    <p className="mb-2 text-xs font-light">Last Updated at: {task.lastUpdated}</p>
+                    <div className='flex justify-between'>
+                        <p className="text-wrap w-4/5">
+                            {isGrid ? task.description.substring(0, 200) : task.description.substring(0, 300)}
+                        </p>
+                        <div className='flex items-center gap-1'>
+                            {/* Render EditForm and Delete components */}
+                            <EditForm task={data} className="h-4 w-4" />
+                            <Delete taskId={task.id} className="h-4 w-4" />
+                            {/* Conditionally render MarkComplete based on task status */}
+                            <div className={`${task.status === 'Complete' ? 'hidden' : 'flex'}`}>
+                                <MarkComplete task={data} className='h-4 w-4' />
+                            </div>
+                        </div>
+                    </div>
+                </AccordionContent>
+            </AccordionItem>
         </>
     );
 }

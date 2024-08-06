@@ -5,6 +5,7 @@ export interface Task {
     category: string;
     due_date: string;
     status: 'Incomplete' | 'Complete'; // Assuming status can only be these two values
+    lastUpdated: string;
 }
 
 export interface SearchParams {

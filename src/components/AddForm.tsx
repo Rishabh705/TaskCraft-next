@@ -24,6 +24,7 @@ export default function AddForm() {
         category: '',
         due_date: '',
         status: 'Incomplete',
+        lastUpdated: ''
     })
 
     // Function to generate a unique task ID
@@ -44,7 +45,7 @@ export default function AddForm() {
             headers: {
                 'Content-Type': 'application/json'
             },
-            body: JSON.stringify({ ...formData, id: taskId })
+            body: JSON.stringify({ ...formData, id: taskId, lastUpdated: new Date().toISOString() })
         });
         if (response.ok) {
             console.log('Task added');
@@ -59,6 +60,7 @@ export default function AddForm() {
             category: '',
             due_date: '',
             status: 'Incomplete',
+            lastUpdated: ''
         })
     }
 

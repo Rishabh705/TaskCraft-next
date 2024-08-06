@@ -9,12 +9,14 @@ import { Button } from './ui/button'
 import { Pencil } from "lucide-react";
 import Form from './Form'
 import { Task } from '@/utils/types';
+import { cn } from '@/lib/utils';
 
 interface EditFormProps {
     task: Task; // The task to be edited
+    className?: string;
 }
 
-export default function EditForm({ task }: EditFormProps) {
+export default function EditForm({ task, className }: EditFormProps) {
     // Initialize form data with the provided task details
     const [formData, setFormData] = useState<Task>({
         id: task.id,
@@ -23,6 +25,7 @@ export default function EditForm({ task }: EditFormProps) {
         category: task.category,
         due_date: task.due_date,
         status: task.status,
+        lastUpdated: task.lastUpdated
     });
 
     // Handle form submission to update the task
@@ -35,7 +38,7 @@ export default function EditForm({ task }: EditFormProps) {
             headers: {
                 'Content-Type': 'application/json'
             },
-            body: JSON.stringify({ ...formData })
+            body: JSON.stringify({ ...formData, lastUpdated: new Date().toISOString() })
         });
         if (response.ok) {
             console.log('Task updated');
@@ -46,7 +49,7 @@ export default function EditForm({ task }: EditFormProps) {
         <Drawer>
             {/* Trigger to open the drawer with an edit icon */}
             <DrawerTrigger asChild>
-                <Pencil className="text-blue-500 hover:cursor-pointer"/>
+                <Pencil className={cn(className, "text-blue-500 hover:cursor-pointer")}/>
             </DrawerTrigger>
             <DrawerContent>
                 <div className="mx-auto w-full max-w-sm">

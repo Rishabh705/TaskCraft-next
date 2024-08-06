@@ -1,10 +1,47 @@
 [
   {
-    "id": "i6iedzp",
-    "title": "task 12",
-    "description": "fgf",
-    "category": "",
-    "due_date": "12121-12-12",
-    "status": "Complete"
+    "id": "1",
+    "title": "Complete project report",
+    "description": "Prepare the final report for the project and submit it to the manager.Prepare the final report for the project and submit it to the manager.Prepare the final report for the project and submit it to the manager.Prepare the final report for the project and submit it to the manager.Prepare the final report for the project and submit it to the manager.Prepare the final report for the project and submit it to the manager.Prepare the final report for the project and submit it to the manager.",
+    "category": "Work",
+    "due_date": "2024-08-10",
+    "status": "Complete",
+    "lastUpdated": "2024-08-05T10:00:00Z"
+  },
+  {
+    "id": "2",
+    "title": "Buy groceries",
+    "description": "Purchase milk, eggs, bread, and vegetables from the supermarket.",
+    "category": "Personal",
+    "due_date": "2024-08-08",
+    "status": "Incomplete",
+    "lastUpdated": "2024-08-05T12:00:00Z"
+  },
+  {
+    "id": "3",
+    "title": "Doctor's appointment",
+    "description": "Visit Dr. Smith for the annual check-up appointment.",
+    "category": "Personal",
+    "due_date": "2024-08-09",
+    "status": "Complete",
+    "lastUpdated": "2024-08-05T14:00:00Z"
+  },
+  {
+    "id": "4",
+    "title": "Team meeting",
+    "description": "Attend the weekly team meeting and discuss project updates.",
+    "category": "Work",
+    "due_date": "2024-08-07",
+    "status": "Incomplete",
+    "lastUpdated": "2024-08-05T16:00:00Z"
+  },
+  {
+    "id": "5",
+    "title": "Call plumber",
+    "description": "Schedule a visit with the plumber to fix the leaking faucet.",
+    "category": "Personal",
+    "due_date": "2024-08-06",
+    "status": "Complete",
+    "lastUpdated": "2024-08-05T18:00:00Z"
   }
 ]
