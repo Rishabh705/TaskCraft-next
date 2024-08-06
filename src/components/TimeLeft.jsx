@@ -1,6 +1,6 @@
 'use client'
 
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useCallback } from 'react';
 import { Badge } from "@/components/ui/badge";
 
 // Custom hook to check if the component is mounted
@@ -19,7 +19,7 @@ const CountdownTimer = ({ task }) => {
     const isMounted = useIsMounted();  // Check if the component is mounted
 
     // Function to calculate the time left until the due date
-    const calculateTimeLeft = () => {
+    const calculateTimeLeft = useCallback(() => {
         const difference = new Date(due_date) - new Date();  // Calculate the difference in milliseconds
         let timeLeft = {
             days: 0,
@@ -39,7 +39,7 @@ const CountdownTimer = ({ task }) => {
             };
         }
         return timeLeft;  // Return the time left object
-    };
+    }, [due_date]);
 
     const [timeLeft, setTimeLeft] = useState(calculateTimeLeft);  // State to store the time left
     const [badgeVariant, setBadgeVariant] = useState('default');  // State to store the badge variant
@@ -61,7 +61,7 @@ const CountdownTimer = ({ task }) => {
         }, 1000);  // Update every second
 
         return () => clearInterval(timer);  // Cleanup the interval on component unmount
-    }, [due_date, isMounted, calculateTimeLeft]);  // Dependencies: run effect when due_date or isMounted changes
+    }, [due_date, isMounted, calculateTimeLeft]);  // Dependencies: run effect when due_date, isMounted, or calculateTimeLeft changes
 
     // Render nothing if not mounted
     if (!isMounted) return null;

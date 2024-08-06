@@ -8,6 +8,6 @@ export interface Task {
 }
 
 export interface SearchParams {
-    [key: string]: string | string[] | undefined
+    [key: string]: string | undefined
 }
 

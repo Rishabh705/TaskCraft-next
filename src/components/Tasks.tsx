@@ -7,13 +7,14 @@ import FilterButton from './FilterButton';
 import TaskCard from './TaskCard';
 import { Frown } from "lucide-react";
 import { SearchParams, Task } from '@/utils/types';
+import { Suspense } from 'react';
 
 interface TasksProps {
   searchParams: SearchParams;
   className?: string;
 }
 export default async function Tasks({ searchParams, className }: TasksProps) {
-  
+
   // Fetch tasks from the API. 'cache: "no-store"' ensures fresh data on each request.
   const response: Response = await fetch(`${process.env.NEXT_PUBLIC_URL}/api`, { cache: "no-store" });
   const { data }: { data: Task[] | undefined } = await response.json();
@@ -22,14 +23,14 @@ export default async function Tasks({ searchParams, className }: TasksProps) {
   // Extract search query, view type (grid or list), category, and status from searchParams
   const search = searchParams?.search || '';  // Default to an empty string if not provided
   const isGrid: boolean = searchParams?.view === 'grid';  // Determine if the view should be a grid
-  const viewstyle: string = isGrid ? 
-    'grid gap-x-4 gap-y-6 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3' : 
+  const viewstyle: string = isGrid ?
+    'grid gap-x-4 gap-y-6 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3' :
     'flex flex-col gap-y-6';  // Apply appropriate styling based on the view type
   const category = searchParams?.category || 'none';  // Default to 'none' if not provided
   const status = searchParams?.status || 'none';  // Default to 'none' if not provided
 
   // Filter tasks based on the search query, selected status, and selected category
-  const displayedTasks: Task[] = tasks?.filter((task: Task) => 
+  const displayedTasks: Task[] = tasks?.filter((task: Task) =>
     // Check if task title includes the search query (case-insensitive)
     task.title?.toLowerCase().includes(search.toLowerCase()) &&
     // Check if task status matches the selected status (or 'none' for no filter)
@@ -51,8 +52,12 @@ export default async function Tasks({ searchParams, className }: TasksProps) {
         <h1 className='text-2xl font-semibold'>Your Tasks</h1>
         <div className='flex gap-8'>
           {/* Filter and View buttons for adjusting the task display */}
-          <FilterButton />
-          <ViewButton className='hidden md:block' />
+          <Suspense>
+            <FilterButton />
+          </Suspense>
+          <Suspense>
+            <ViewButton className='hidden md:block' />
+          </Suspense>
         </div>
       </div>
       <div className={cn(viewstyle, 'min-h-52')}>

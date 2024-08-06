@@ -3,6 +3,7 @@ import SearchBox from "@/components/SearchBox";
 import Svg from "@/components/Svg";
 import Tasks from "@/components/Tasks";
 import { SearchParams } from "@/utils/types";
+import { Suspense } from "react";
 
 export default function Home({
   searchParams,
@@ -22,7 +23,9 @@ export default function Home({
             <p className='mt-6 text-lg max-w-prose text-muted-foreground'>
               Welcome to TaskCraft, your go-to platform for efficient task management. Stay organized and boost your productivity with our powerful features
             </p>
-            <SearchBox className="w-4/5 mt-12" />
+            <Suspense>
+              <SearchBox className="w-4/5 mt-12" />
+            </Suspense>
           </div>
         </MaxWidthWrapper>
       </Svg>
