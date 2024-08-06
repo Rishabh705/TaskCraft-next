@@ -15,7 +15,7 @@ interface TasksProps {
 export default async function Tasks({ searchParams, className }: TasksProps) {
   
   // Fetch tasks from the API. 'cache: "no-store"' ensures fresh data on each request.
-  const response: Response = await fetch('http://localhost:3000/api', { cache: "no-store" });
+  const response: Response = await fetch(`${process.env.NEXT_PUBLIC_URL}/api`, { cache: "no-store" });
   const { data }: { data: Task[] | undefined } = await response.json();
   const tasks: Task[] | undefined = data;
 
