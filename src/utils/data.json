@@ -14,7 +14,7 @@
     "description": "Purchase milk, eggs, bread, and vegetables from the supermarket.",
     "category": "Personal",
     "due_date": "2024-08-08",
-    "status": "Incomplete",
+    "status": "Complete",
     "lastUpdated": "2024-08-05T12:00:00Z"
   },
   {
@@ -24,7 +24,7 @@
     "category": "Personal",
     "due_date": "2024-08-09",
     "status": "Complete",
-    "lastUpdated": "2024-08-05T14:00:00Z"
+    "lastUpdated": "2024-08-06T12:29:19.376Z"
   },
   {
     "id": "4",
@@ -32,7 +32,7 @@
     "description": "Attend the weekly team meeting and discuss project updates.",
     "category": "Work",
     "due_date": "2024-08-07",
-    "status": "Incomplete",
+    "status": "Complete",
     "lastUpdated": "2024-08-05T16:00:00Z"
   },
   {

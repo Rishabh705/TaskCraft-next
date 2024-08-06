@@ -8,7 +8,7 @@ export default function Delete({ taskId, className }: { taskId: string; classNam
     // Handle the deletion of a task
     const handleDelete = async (id: string) => {
         // Send a DELETE request to remove the task
-        const response: Response = await fetch('http://localhost:3000/api', {
+        const response: Response = await fetch(`${process.env.NEXT_PUBLIC_URL}/api`, {
             method: 'DELETE',
             headers: {
                 'Content-Type': 'application/json'

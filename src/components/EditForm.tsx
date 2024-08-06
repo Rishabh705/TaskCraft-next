@@ -33,7 +33,7 @@ export default function EditForm({ task, className }: EditFormProps) {
         e.preventDefault();
 
         // Send a PUT request to update the task
-        const response: Response = await fetch(`http://localhost:3000/api/${task.id}`, {
+        const response: Response = await fetch(`${process.env.NEXT_PUBLIC_URL}/api/${task.id}`, {
             method: 'PUT',
             headers: {
                 'Content-Type': 'application/json'

@@ -40,7 +40,7 @@ export default function AddForm() {
         const taskId = generateUniqueId();
 
         // Send a POST request to add the new task
-        const response: Response = await fetch('http://localhost:3000/api', {
+        const response: Response = await fetch(`${process.env.NEXT_PUBLIC_URL}/api`, {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
