@@ -20,7 +20,7 @@ export default function MarkComplete({ task, className }: { task: Task; classNam
             if (response.ok) {
                 console.log('Task completed'); // Log success message
             }
-            customRevalidatePath("fetchTasks");
+            await customRevalidatePath("fetchTasks");
         }
         catch (error: any) {
             console.log(error.message);

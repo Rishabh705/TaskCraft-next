@@ -20,7 +20,7 @@ export default function Delete({ taskId, className }: { taskId: string; classNam
             if (response.ok) {
                 console.log('Task deleted');
             }
-            customRevalidatePath("fetchTasks");
+            await customRevalidatePath("fetchTasks");
         } catch (error:any) {
             console.log('Error deleting task:', error.message);
         }

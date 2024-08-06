@@ -1,6 +1,5 @@
 import MaxWidthWrapper from './MaxWidthWrapper'
 import Link from 'next/link'
-import Profile from './Profile'
 import { ClipboardList } from 'lucide-react'
 
 const Header = () => {

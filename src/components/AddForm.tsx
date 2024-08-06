@@ -54,7 +54,7 @@ export default function AddForm() {
             if (response.ok) {
                 console.log('Task updated');
             }
-            customRevalidatePath("fetchTasks");
+            await customRevalidatePath("fetchTasks");
             setOpen(false); // Close the drawer after updating the task
 
 

@@ -46,7 +46,7 @@ export default function EditForm({ task, className }: EditFormProps) {
             if (response.ok) {
                 console.log('Task updated');
             }
-            customRevalidatePath("fetchTasks");
+            await customRevalidatePath("fetchTasks");
             setOpen(false); // Close the drawer after updating the task
         } catch (error) {
             console.log('Error updating task:', error);
