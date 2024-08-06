@@ -20,7 +20,7 @@ import Delete from "./Delete";
 export default async function TaskCard({ task, isGrid }: { task: Task, isGrid: boolean }) {
 
     // Fetch updated task data from the server
-    const response: Response = await fetch(`http://localhost:3000/api/${task.id}`, { cache: "no-store" });
+    const response: Response = await fetch(`${process.env.NEXT_PUBLIC_URLy}/api/${task.id}`, { cache: "no-store" });
     const { data }: { data: Task } = await response.json();
     
     return (
