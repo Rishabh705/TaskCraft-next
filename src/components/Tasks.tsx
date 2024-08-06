@@ -9,6 +9,7 @@ import { Frown } from "lucide-react";
 import { SearchParams, Task } from '@/utils/types';
 import { Suspense } from 'react';
 import { Accordion } from './ui/accordion';
+import { notFound } from 'next/navigation';
 
 interface TasksProps {
   searchParams: SearchParams;
@@ -17,10 +18,35 @@ interface TasksProps {
 export default async function Tasks({ searchParams, className }: TasksProps) {
 
   // Fetch tasks from the API. 'cache: "no-store"' ensures fresh data on each request.
-  const response: Response = await fetch(`${process.env.NEXT_PUBLIC_URL}/api`, { cache: "no-store" });
-  const { data }: { data: Task[] | undefined } = await response.json();
-  const tasks: Task[] | undefined = data;
 
+
+
+  const fetchData = async () => {
+    try {
+      const response: Response = await fetch(`${process.env.NEXT_PUBLIC_URL}/api`, {
+        cache: "no-cache",
+        next:
+          { tags: ['fetchTasks'] }
+
+      });
+      const { data }: { data: Task[] | undefined } = await response.json();
+      const tasks: Task[] | undefined = data;
+      return {
+        tasks
+      }
+    } catch (error: any) {
+      console.log(error.message);
+      return {
+        error: "Failed to fetch data"
+      }
+    }
+  }
+
+  const data = await fetchData();
+
+  if (data.error) {
+    notFound();
+  }
   // Extract search query, view type (grid or list), category, and status from searchParams
   const search = searchParams?.search || '';  // Default to an empty string if not provided
   // const isGrid: boolean = searchParams?.view === 'grid';  // Determine if the view should be a grid
@@ -32,7 +58,7 @@ export default async function Tasks({ searchParams, className }: TasksProps) {
   const status = searchParams?.status || 'none';  // Default to 'none' if not provided
 
   // Filter tasks based on the search query, selected status, and selected category
-  const displayedTasks: Task[] = tasks?.filter((task: Task) =>
+  const displayedTasks: Task[] = data.tasks?.filter((task: Task) =>
     // Check if task title includes the search query (case-insensitive)
     task.title?.toLowerCase().includes(search.toLowerCase()) &&
     // Check if task status matches the selected status (or 'none' for no filter)

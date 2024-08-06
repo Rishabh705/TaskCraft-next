@@ -10,6 +10,7 @@ import { Pencil } from "lucide-react";
 import Form from './Form'
 import { Task } from '@/utils/types';
 import { cn } from '@/lib/utils';
+import { customRevalidatePath } from '@/lib/actions';
 
 interface EditFormProps {
     task: Task; // The task to be edited
@@ -18,6 +19,7 @@ interface EditFormProps {
 
 export default function EditForm({ task, className }: EditFormProps) {
     // Initialize form data with the provided task details
+    const [open, setOpen] = useState(false);
     const [formData, setFormData] = useState<Task>({
         id: task.id,
         title: task.title,
@@ -29,27 +31,34 @@ export default function EditForm({ task, className }: EditFormProps) {
     });
 
     // Handle form submission to update the task
-    const handleSubmit = async(e: React.FormEvent<HTMLFormElement>) => {
+    const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
         e.preventDefault();
 
         // Send a PUT request to update the task
-        const response: Response = await fetch(`${process.env.NEXT_PUBLIC_URL}/api/${task.id}`, {
-            method: 'PUT',
-            headers: {
-                'Content-Type': 'application/json'
-            },
-            body: JSON.stringify({ ...formData, lastUpdated: new Date().toISOString() })
-        });
-        if (response.ok) {
-            console.log('Task updated');
+        try {
+            const response: Response = await fetch(`${process.env.NEXT_PUBLIC_URL}/api/${task.id}`, {
+                method: 'PUT',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({ ...formData, lastUpdated: new Date().toISOString() })
+            });
+            if (response.ok) {
+                console.log('Task updated');
+            }
+            customRevalidatePath("fetchTasks");
+            setOpen(false); // Close the drawer after updating the task
+        } catch (error) {
+            console.log('Error updating task:', error);
+
         }
     };
 
     return (
-        <Drawer>
+        <Drawer open={open} onOpenChange={(open) => setOpen(open)}>
             {/* Trigger to open the drawer with an edit icon */}
             <DrawerTrigger asChild>
-                <Pencil className={cn(className, "text-blue-500 hover:cursor-pointer")}/>
+                <Pencil className={cn(className, "text-blue-500 hover:cursor-pointer")} />
             </DrawerTrigger>
             <DrawerContent>
                 <div className="mx-auto w-full max-w-sm">

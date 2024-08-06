@@ -14,9 +14,11 @@ import {
 import { CirclePlus } from "lucide-react"
 import Form from './Form'
 import { Task } from '@/utils/types'
+import { customRevalidatePath } from '@/lib/actions'
 
 export default function AddForm() {
     // Initialize form data state with default values
+    const [open, setOpen] = useState(false);
     const [formData, setFormData] = useState<Task>({
         id: '',
         title: '',
@@ -34,38 +36,45 @@ export default function AddForm() {
 
     // Handle form submission
     const handleSubmit = async (e: React.ChangeEvent<HTMLInputElement>) => {
+
         e.preventDefault()
+        try {
 
-        // Generate a unique ID for the new task
-        const taskId = generateUniqueId();
+            // Generate a unique ID for the new task
+            const taskId = generateUniqueId();
 
-        // Send a POST request to add the new task
-        const response: Response = await fetch(`${process.env.NEXT_PUBLIC_URL}/api`, {
-            method: 'POST',
-            headers: {
-                'Content-Type': 'application/json'
-            },
-            body: JSON.stringify({ ...formData, id: taskId, lastUpdated: new Date().toISOString() })
-        });
-        if (response.ok) {
-            console.log('Task added');
-            
+            // Send a POST request to add the new task
+            const response: Response = await fetch(`${process.env.NEXT_PUBLIC_URL}/api`, {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({ ...formData, id: taskId, lastUpdated: new Date().toISOString() })
+            });
+            if (response.ok) {
+                console.log('Task updated');
+            }
+            customRevalidatePath("fetchTasks");
+            setOpen(false); // Close the drawer after updating the task
+
+
+            // Clear form data after submission
+            setFormData({
+                id: '',
+                title: '',
+                description: '',
+                category: '',
+                due_date: '',
+                status: 'Incomplete',
+                lastUpdated: ''
+            })
+        } catch (error) {
+            console.log('Error updating task:', error);
         }
-
-        // Clear form data after submission
-        setFormData({
-            id: '',
-            title: '',
-            description: '',
-            category: '',
-            due_date: '',
-            status: 'Incomplete',
-            lastUpdated: ''
-        })
     }
 
     return (
-        <Drawer>
+        <Drawer open={open} onOpenChange={(open) => setOpen(open)}>
             {/* Trigger to open the drawer */}
             <DrawerTrigger asChild>
                 <Card className='flex flex-col justify-center items-center hover:bg-secondary'>

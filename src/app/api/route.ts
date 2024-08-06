@@ -1,7 +1,8 @@
 import { promises as fs } from 'fs';
 import path from 'path';
-import { NextResponse } from 'next/server';
+import { NextRequest, NextResponse } from 'next/server';
 import { Task } from '@/utils/types';
+import { revalidatePath } from 'next/cache';
 
 // Define the path to the JSON file where tasks are stored
 const filePath: string = path.join(process.cwd(), 'src', 'utils', 'data.json');
@@ -26,7 +27,7 @@ const writeFile = async (data: Task[]) => {
 };
 
 // Handle GET requests to fetch all tasks
-export async function GET() {
+export async function GET(request: NextRequest) {
     try {
         const data: Task[] = await readFile();
         // Respond with the tasks as JSON
@@ -39,7 +40,7 @@ export async function GET() {
 }
 
 // Handle POST requests to add a new task
-export async function POST(request: Request) {
+export async function POST(request: NextRequest) {
     try {
         const data: Task[] = await readFile();
         const newTask: Task = await request.json();
@@ -57,7 +58,7 @@ export async function POST(request: Request) {
 }
 
 // Handle DELETE requests to remove a task by its ID
-export async function DELETE(request: Request) {
+export async function DELETE(request: NextRequest) {
     try {
         const { id }: { id: string } = await request.json();
         let data: Task[] = await readFile();
@@ -84,7 +85,7 @@ export async function DELETE(request: Request) {
 }
 
 // Handle PUT requests to update a task
-export async function PUT(request: Request) {
+export async function PUT(request: NextRequest) {
     try {
         const updatedTask: Task = await request.json();
         let data: Task[] = await readFile();

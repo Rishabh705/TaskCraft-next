@@ -1,7 +1,8 @@
 import { promises as fs } from 'fs';
 import path from 'path';
-import { NextResponse } from 'next/server';
+import { NextRequest, NextResponse } from 'next/server';
 import { Task } from '@/utils/types';
+import { revalidatePath } from 'next/cache';
 
 // Define the path to the JSON file where tasks are stored
 const filePath: string = path.join(process.cwd(), 'src', 'utils', 'data.json');
@@ -30,7 +31,7 @@ const writeFile = async (data: Task[]) => {
 };
 
 // Handle GET requests to fetch a specific task by its ID
-export async function GET(request: Request, { params }: { params: { id: string } }) {
+export async function GET(request: NextRequest, { params }: { params: { id: string } }) {
     const { id } = params;
     try {
         const data: Task[] = await readFile();
@@ -51,7 +52,7 @@ export async function GET(request: Request, { params }: { params: { id: string }
 }
 
 // Handle PUT requests to update a task by its ID
-export async function PUT(request: Request, { params }: { params: { id: string } }) {
+export async function PUT(request: NextRequest, { params }: { params: { id: string } }) {
     const { id } = params;
     try {
         const updatedTask: Task = await request.json();
