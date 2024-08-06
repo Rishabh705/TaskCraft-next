@@ -61,7 +61,7 @@ const CountdownTimer = ({ task }) => {
         }, 1000);  // Update every second
 
         return () => clearInterval(timer);  // Cleanup the interval on component unmount
-    }, [due_date, isMounted]);  // Dependencies: run effect when due_date or isMounted changes
+    }, [due_date, isMounted, calculateTimeLeft]);  // Dependencies: run effect when due_date or isMounted changes
 
     // Render nothing if not mounted
     if (!isMounted) return null;
