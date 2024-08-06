@@ -1,6 +1,7 @@
-import MaxWidthWrapper from './MaxWidthWrapper'
-import Link from 'next/link'
-import { ClipboardList } from 'lucide-react'
+import MaxWidthWrapper from './MaxWidthWrapper';
+import Link from 'next/link';
+import { ClipboardList } from 'lucide-react';
+import Inbox from './Inbox';
 
 const Header = () => {
   return (
@@ -14,18 +15,21 @@ const Header = () => {
               <div className='ml-4 flex items-center gap-4 lg:ml-0'>
                 {/* Logo and title */}
                 <Link href='/'>
-                  <ClipboardList className=''/>
+                  <ClipboardList className='h-6 w-6' />
                 </Link>
                 <Link href='/'>
                   <h1 className='text-3xl font-semibold mb-1'>TaskCraft</h1>
                 </Link>
+              </div>
+              <div className='ml-auto'>
+                <Inbox />
               </div>
             </div>
           </div>
         </MaxWidthWrapper>
       </header>
     </div>
-  )
-}
+  );
+};
 
-export default Header
+export default Header;
