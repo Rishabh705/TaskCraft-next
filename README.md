@@ -48,8 +48,8 @@ A custom hook `useIsMounted` is used to check if the component is mounted, preve
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/your-username/task-management-system.git
-   cd task-management-system
+   git clone https://github.com/Rishabh705/TaskCraft-next.git
+   cd TaskCraft-next
 
 2. Install the dependencies:
     ```bash
