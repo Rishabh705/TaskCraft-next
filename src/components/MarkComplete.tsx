@@ -8,7 +8,7 @@ export default function MarkComplete({ task, className }: { task: Task; classNam
     // Handler function to mark the task as complete
     const handleComplete = async() => {
         // Send a PUT request to update the task status
-        const response: Response = await fetch('http://localhost:3000/api', {
+        const response: Response = await fetch(`${process.env.NEXT_PUBLIC_URL}/api`, {
             method: 'PUT',
             headers: {
                 'Content-Type': 'application/json'
